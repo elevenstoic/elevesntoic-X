@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Elevenstoic",
+    "slug": "elevenstoic-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#26436B"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.elevenstoic.app",
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to save wallpapers to your photo library.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save wallpapers."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#26436B"
+      },
+      "package": "com.elevenstoic.app",
+      "permissions": [
+        "NOTIFICATIONS",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#26436B"
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "elevenstoic-app"
+      }
+    }
+  }
+}
